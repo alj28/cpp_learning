@@ -17,4 +17,4 @@ FetchContent_MakeAvailable(googletest)
 enable_testing()
 
 add_subdirectory(template)
-
+add_subdirectory(crypto_challenges)
