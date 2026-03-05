@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.28)
 project(my_project)
 
 # GoogleTest requires at least C++17
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 include(FetchContent)
@@ -16,5 +16,11 @@ FetchContent_MakeAvailable(googletest)
 
 enable_testing()
 
+add_subdirectory(thirdparty/fmt)
+
+set(SPDLOG_FMT_EXTERNAL ON)
+add_subdirectory(thirdparty/spdlog)
+
 add_subdirectory(template)
+add_subdirectory(dhcp)
 
