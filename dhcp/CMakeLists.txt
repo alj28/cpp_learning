@@ -14,3 +14,4 @@ target_include_directories(dhcp PRIVATE
 
 target_link_libraries(dhcp PRIVATE spdlog::spdlog)
 target_link_libraries(dhcp PRIVATE fmt::fmt)
+target_link_libraries(dhcp PRIVATE CLI11::CLI11)

@@ -21,6 +21,8 @@ add_subdirectory(thirdparty/fmt)
 set(SPDLOG_FMT_EXTERNAL ON)
 add_subdirectory(thirdparty/spdlog)
 
+add_subdirectory(thirdparty/CLI11)
+
 add_subdirectory(template)
 add_subdirectory(dhcp)
 
