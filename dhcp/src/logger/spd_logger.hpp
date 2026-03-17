@@ -16,9 +16,19 @@ public:
         spdlog::info(msg);
     }
 
+    void info(const char* msg)
+    {
+        spdlog::info(std::string(msg));
+    }
+
     void warn(const std::string& msg)
     {
         spdlog::warn(msg);
+    }
+
+    void warn(const char* msg)
+    {
+        spdlog::warn(std::string(msg));
     }
 
     void error(const std::string& msg)
@@ -26,9 +36,19 @@ public:
         spdlog::critical(msg);
     }
 
+    void error(const char* msg)
+    {
+        spdlog::error(std::string(msg));
+    }
+
     void debug(const std::string& msg)
     {
         spdlog::debug(msg);
+    }
+
+    void debug(const char* msg)
+    {
+        spdlog::debug(std::string(msg));
     }
 
 

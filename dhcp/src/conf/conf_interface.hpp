@@ -15,6 +15,11 @@ struct conf_interface_port
     std::uint16_t response_port;
 };
 
+struct conf_timeouts
+{
+    std::uint32_t lease_timeout;
+};
+
 class IConf
 {
 public:
@@ -22,6 +27,7 @@ public:
 
     virtual const struct conf_addr_range* getAddrRange(void) = 0;
     virtual const struct conf_interface_port* getInterfacePort(void) = 0;
+    virtual const struct conf_timeouts* getTimeouts(void) = 0;
 };
 
 

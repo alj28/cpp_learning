@@ -6,10 +6,12 @@
 class DefaultConf: public IConf
 {
 public:
-    ~DefaultConf(void) = default;
+    DefaultConf(){};
+    ~DefaultConf() = default;
 
     const struct conf_addr_range* getAddrRange(void);
-    const struct conf_interface_port* getListeningPort(void);
+    const struct conf_interface_port* getInterfacePort(void);
+    const struct conf_timeouts* getTimeouts(void);
 };
 
 

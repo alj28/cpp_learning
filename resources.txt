@@ -1,0 +1,3 @@
+https://developer.mantidproject.org/Standards/CPPStandards.html
+https://db.in.tum.de/teaching/ss21/c++praktikum/slides/lecture-10.2.pdf
+https://www.iiests.ac.in/ckfinder/userfiles/files/sockbookv2_1.pdf 
